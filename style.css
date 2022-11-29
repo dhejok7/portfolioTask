@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -33,6 +38,9 @@
   background-color: white;
   box-shadow: 0 0 10px white;
 }
+
+
+
 /* Home Section */
 
 #home {
@@ -109,13 +117,14 @@
   font-size: 2rem;
   margin-bottom: 20px;
 }
-/* Portfolio section */
-#portfolio {
+/* Projects section */
+#projects {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 .gallery {
   display: flex;
@@ -128,8 +137,8 @@
   height: 240px;
   margin: 10px;
 }
-/* services section */
-#services {
+/* skills section */
+#skills {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -155,10 +164,61 @@
   background-size: 100% 200%;
   transition: all .8s;
 }
-.box::hover{
+.box:hover{
     background-position: left bottom;
     color: white;
     border:none;
     box-shadow: 0 0 20px rgb(255, 45, 45);
+}
+.box img{
+  width: 80px;
+  height:80px;
+  background-color: white;
+  padding: 10px;
+}
+/* contact section */
+#contact{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: rgba(0,0, 0,0.9);
+  color: white;
+  padding: 20px;
 
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: black;
+  align-items: center;
+  margin: 20px 0px;
+}
+.input{
+  padding: 12px;
+  margin: 15px;
+  width: 30%;
+  border: none;
+  outline-style: dashed;
+ 
+
+}
+#msg{
+  padding: 10px;
+  margin: 15px;
+  width: 20%;
+  border: none;
+  outline: none;
+  
+}
+#send{
+  padding: 10px;
+  margin: 40px;
+  width: 10%;
+  border: none;
+  outline: none;
+}
+#send:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
 }
